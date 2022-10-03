@@ -27,6 +27,7 @@ const App = () => {
 
     if (user) {
       setCurrentUser(user);
+      console.log(user);
       setShowModeratorBoard(user.roles.includes("ROLE_MODERATOR"));
       setShowAdminBoard(user.roles.includes("ROLE_ADMIN"));
     }
@@ -118,7 +119,6 @@ const App = () => {
           </div>
         )}
       </nav>
-      <div> Я понял</div>
 
 
       <div className="container mt-3">
