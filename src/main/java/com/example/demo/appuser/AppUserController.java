@@ -13,7 +13,7 @@ import java.util.List;
 public class AppUserController {
     private final AppUserService appUserService;
 
-    @GetMapping("/user/read")
+    @GetMapping("/test/all")
     public List<AppUser> getAllUsers() {
         return appUserService.getUsers();
     }
